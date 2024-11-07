@@ -1,0 +1,71 @@
+@import 'normalize.css';
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --text-font: "Manrope", sans-serif;
+    --title-font: "Fraunces", serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body  {
+}
+
+header {
+    background-color: #24053E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-family:var(--title-font);
+    font-size: 80px;
+    color: white;
+    width: 635px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 span{
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+    text-decoration-thickness: 3px;     
+    text-underline-offset: 8px;   
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 56px;
+    margin-bottom: 56px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+    text-decoration-thickness: 3px;     
+    text-underline-offset: 8px;   
+    font-family: var(--text-font);
+}
+
+.header-btn{
+    background-color: #44FFA1;
+    text-align: center;
+    padding: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--text-font);
+    margin-bottom: 88px;
+}
