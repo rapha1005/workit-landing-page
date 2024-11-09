@@ -1,30 +1,57 @@
-@import 'normalize.css';
 @import 'reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sixtyfour+Convergence&display=swap');
 
 :root{
-    --text-font: "Manrope", sans-serif;
     --title-font: "Fraunces", serif;
+    --text-font: "Manrope", sans-serif;
 }
 
-* {
+*{
     box-sizing: border-box;
     text-decoration: none;
 }
-body  {
+
+nav{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 56px;
+    margin-top: 56px;
 }
 
-header {
-    background-color: #24053E;
+nav a{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    font-family: var(--text-font);
+}
+
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+
 }
-h1 {
-    font-family:var(--title-font);
-    font-size: 80px;
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
+    width: 100%;
+    background-color: #24053E;
+}
+
+h1{
+    font-family: var(--title-font);
+    font-size: 80px;
     width: 635px;
     text-align: center;
     margin-bottom: 40px;
@@ -33,39 +60,108 @@ h1 {
 h1 span{
     text-decoration: underline;
     text-decoration-color: #44FFA1;
-    text-decoration-thickness: 3px;     
-    text-underline-offset: 8px;   
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
 }
 
-nav {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    padding-top: 56px;
-    margin-bottom: 56px;
-}
-
-nav a{
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: #44FFA1;
-    text-decoration-thickness: 3px;     
-    text-underline-offset: 8px;   
-    font-family: var(--text-font);
-}
-
-.header-btn{
+.main-btn{
     background-color: #44FFA1;
+    width: 162px;
     text-align: center;
-    padding: 32px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 28px;
     font-size: 18px;
     font-weight: 700;
+    color: #24053E;
     font-family: var(--text-font);
     margin-bottom: 88px;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 88px;
+    padding-bottom: 144px;
+    background-color: #FCF8FF;
+    margin-bottom: 72px;
+}
+
+.list-container{
+    text-align: center;
+    max-width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-title{
+    font-family: var(--title-font);
+    font-size: 32px;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.content-text{
+    font-family: var(--text-font);
+    font-size: 18px;
+}
+
+.content-number{
+    font-family: var(--title-font);
+    font-size: 24px;
+    margin-bottom: 56px;
+    width: 56px;
+    height: 56px;
+    border: #584D62 solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+}
+
+.founder-section img {
+    display: inline;
+}
+
+.founder-description{
+    background-color: #24053E;
+    color: white;
+    padding: 64px;
+    align-self: flex-end;
+    position: relative;
+    left: -100px;
+    top: -50px;
+}
+.founder-description-title{
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 56px;
+    margin-bottom: 32px;
+}
+
+.founder-description-text{
+    font-family: var(--text-font);
+    font-size: 18px;
+    line-height: 180%;
+    max-width: 602px;
+    margin-bottom: 32px;
+}
+
+.founder-description a{
+    text-align: center;
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #44FFA1;
+    font-family: var(--text-font);
+    font-family: 18px;
+    color: #24053E;
+    font-weight: 700;
 }
