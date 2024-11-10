@@ -32,6 +32,10 @@ nav a{
     font-family: var(--text-font);
 }
 
+nav a:hover{
+    color: #44FFA1;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -79,6 +83,12 @@ h1 span{
     color: #24053E;
     font-family: var(--text-font);
     margin-bottom: 88px;
+    border: #44FFA1 solid 2px;
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: #44FFA1;
 }
 
 .list{
@@ -170,6 +180,12 @@ h1 span{
     font-family: 18px;
     color: #24053E;
     font-weight: 700;
+    border: #44FFA1 solid 2px;
+}
+
+.founder-description a:hover{
+    background-color: transparent;
+    color: #44FFA1;
 }
 
 footer{
@@ -184,4 +200,8 @@ footer{
 .footer-icons{
     display: flex;
     gap: 28px;
+}
+
+.footer-icons img:hover{
+    background-color: #24053E;
 }
