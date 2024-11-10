@@ -57,6 +57,11 @@ h1{
     margin-bottom: 40px;
 }
 
+.phone-img{
+    position: relative;
+    top: 150px;
+}
+
 h1 span{
     text-decoration: underline;
     text-decoration-color: #44FFA1;
@@ -80,7 +85,7 @@ h1 span{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-top: 88px;
+    padding-top: 20vh;
     padding-bottom: 144px;
     background-color: #FCF8FF;
     margin-bottom: 72px;
@@ -120,6 +125,7 @@ h1 span{
 }
 
 .founder-section {
+    margin-bottom: 112px;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -164,4 +170,18 @@ h1 span{
     font-family: 18px;
     color: #24053E;
     font-weight: 700;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 56px;
+    margin-bottom: 112px;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 28px;
 }
