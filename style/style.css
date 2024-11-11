@@ -205,3 +205,15 @@ footer{
 .footer-icons img:hover{
     background-color: #24053E;
 }
+
+.green1{
+    position: absolute;
+    margin-top: 92px;
+    left: 0;
+}
+
+.green2{
+    position: absolute;
+    margin-top: 280px;
+    align-self: flex-end;
+}
