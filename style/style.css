@@ -23,6 +23,10 @@ nav{
     margin-top: 56px;
 }
 
+nav img{
+    cursor: pointer;
+}
+
 nav a{
     color: #fff;
     text-decoration: underline;
